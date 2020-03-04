@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Timeline Story"/>
+  <div id="app" style="height:100%;">
+    <router-view style="height:100%;"></router-view>
   </div>
 </template>
 

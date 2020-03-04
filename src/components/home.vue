@@ -1,10 +1,18 @@
+
+
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>Welcome to Timeline Story</h1>
+    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
   </div>
 </template>
 
 <script>
+
+import 'timelinejs3/compiled/css/timeline.css'
+
+timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml');
+
 export default {
   name: 'home',
   props: {
@@ -15,6 +23,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 h3 {
   margin: 40px 0 0;
 }
